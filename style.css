@@ -1,0 +1,102 @@
+/* style.css */
+
+/* تنظیم فونت و رنگ‌های پایه */
+body {
+    font-family: 'Vazir', sans-serif;
+    background: #f8f9fa;
+    color: #343a40;
+}
+
+/* منوی ناوبری */
+.navbar {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* دکمه‌ها */
+.btn-primary {
+    background: #2575fc;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #6a11cb;
+}
+
+/* اسلایدر تبلیغات (اگر قرار باشه اضافه بشه) */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+}
+
+.slider-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* انیمیشن فید */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* کارت محصولات */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 0.2);
+}
+
+/* عنوان‌ها */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* فرم تماس */
+form label {
+    font-weight: 600;
+}
+
+form input, form textarea {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px #2575fc;
+    outline: none;
+}
+
+/* فوتر (اگر اضافه شود) */
+footer {
+    background: #2575fc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
